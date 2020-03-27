@@ -108,6 +108,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: left;
+    color: #e2e3ed;
   }
 
 h1 {
@@ -133,8 +134,11 @@ a {
     color: #e2e3ed;
     text-decoration: none;
 }
-ul {
+ul li {
     list-style: none;
+    font-weight: bold;
+    text-transform: capitalize;
+
 }
 address {
     font-family: 'Open Sans', sans-serif;
@@ -145,6 +149,33 @@ address {
      margin: 50px 0;
    }
 
+/* Home page form styles */
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 /*-----------Header and Footer--------------------------------------------------------*/
 
 header, footer {
@@ -163,6 +194,7 @@ header .content-wrapper {
 }
 
 header {
+  background-color: #202322;
   padding: 15px 0;
 }
 
@@ -187,6 +219,11 @@ header nav ul {
 header nav ul li {
   padding: 0 20px;
 }
+
+footer {
+  background-color: #202322;
+}
+
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
@@ -194,6 +231,7 @@ footer .content-wrapper {
   justify-content: center;
   text-align: center;
 }
+
 footer .social-icons {
     display: flex;
     justify-content: space-around;
@@ -215,12 +253,14 @@ footer .copyright {
 }
 /*-----------Main----------------------------------------------------------*/
 main {
-  padding: 0 20px;
+  margin: 0 0px;
 }
 .hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url();
+  margin-left: 20px;
   }
 
 p {
@@ -233,7 +273,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
+  background-color: #527158;
+  }
 
 /*----------Features------------------------------------------------------*/
 .features {
@@ -256,6 +297,7 @@ aside {
 .features-item article {
   width: 63%;
   margin: 30px 0;
+  text-align: center;
 }
 
 .features p {
@@ -266,6 +308,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
