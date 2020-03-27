@@ -214,7 +214,7 @@ aside {
 
 .features-item article {
   width: 63%;
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .features p {
@@ -425,9 +425,54 @@ aside {
   .features .features-item-description {
     width: 50%;
   }
+
+/* Reviews */
+
+  .review-content {
+    display: flex;
+    flex-basis: 50%;
+    flex-flow: column;
+}
+
+  .reviews article {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* Footer */
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 502px;
+  }
+
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
-}
+
+  /*General styles*/
+
+   .content-wrapper {
+     max-width: 960px;
+     margin: 100px 0;
+  }
+
+  /* Hero area */
+
+  .hero-area {
+    margin-left: 100px;
+    justify-content: flex-start;
+  }
+
+  .features-item article {
+    flex-basis: 33%;
+  }
+
+  .footer-content {
+    width: 860px;
+  }
+  
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
