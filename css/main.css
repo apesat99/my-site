@@ -161,38 +161,13 @@ figure {
      margin: 50px 0;
    }
 
-/* Home page form styles */
 
-aside .form {
-  margin-top: 30px;
-}
-
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
 /*-----------Header and Footer--------------------------------------------------------*/
 
 header, footer {
+  background-color: #202322;
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -215,12 +190,13 @@ header .content-wrapper {
 }
 
 header {
-  background-color: #202322;
+
   padding: 15px 0;
   width: 100%;
 }
 
 .header-divider {
+  background: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -231,6 +207,9 @@ header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   flex-flow: row wrap;
   width: 60%;
 }
@@ -241,9 +220,8 @@ header nav ul {
   width: 100%;
 }
 
-
 header nav ul li {
-  padding: 0 20px;
+  font-size: 1.125em;
 }
 
 footer {
@@ -282,6 +260,7 @@ footer .social {
   justify-content: center;
   flex-flow: row wrap;
   padding-left: 20px;
+  min-height: 300px;
   background-image: url("../img/hero-img.jpg");
   background-size: cover;
   background-position: center;
@@ -300,7 +279,33 @@ aside {
   flex-flow: row wrap;
   background-color: #527158;
   }
+  /* Home page form styles */
 
+  aside .form {
+    margin-top: 30px;
+  }
+
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
 /*----------Features------------------------------------------------------*/
 .features {
   display: flex;
@@ -617,6 +622,9 @@ aside {
   .footer-content {
     width: 860px;
   }
+
+  /* About page */
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
