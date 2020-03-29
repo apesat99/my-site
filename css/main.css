@@ -156,10 +156,10 @@ img {
 figure {
   margin:: 0;
 }
-  .content-wrapper {
-     width: 90%;
-     margin: 50px 0;
-   }
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 
 
 /*-----------Header and Footer--------------------------------------------------------*/
@@ -229,7 +229,7 @@ footer {
 }
 
 footer .content-wrapper {
-  width: 55%;
+  width: 75%;
   margin: 50px 0;
   display: flex;
   justify-content: center;
@@ -247,11 +247,18 @@ footer p {
 }
 
 footer .copyright {
+  width: 100%;
+  text-align: center;
   margin: 20px 0;
 }
 
-footer .social {
-  padding: 20px 0;
+.social p {
+  padding: 15px 15px;
+}
+
+.social i {
+  color: #527158;
+  font-size: 2.25em;
 }
 /*-----------Main----------------------------------------------------------*/
 
@@ -259,11 +266,11 @@ footer .social {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  padding-left: 20px;
-  min-height: 300px;
+  min-height: 500px;
   background-image: url("../img/hero-img.jpg");
   background-size: cover;
   background-position: center;
+  padding: 20px;
 
   }
 
@@ -338,13 +345,16 @@ aside {
   margin: 0;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   background-color: #2a423a;
 }
-
 .reviews h2 {
   width: 80%;
 }
@@ -375,10 +385,7 @@ aside {
     font-size: 1em;
     line-height: 1.5;
 }
-.chat br {
-    font-size: 1em;
-    line-height: 1.5;
-}
+
 .map figure {
   width: 100%;
   height: 0;
@@ -399,18 +406,21 @@ aside {
 /*------------FAQ styles--------------------------------------------------*/
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+
 }
 
 .faq .content-wrapper {
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0 0 0;
+
 }
 
 .faq h2 {
@@ -523,14 +533,17 @@ aside {
   header {
     flex-flow: row;
     justify-content: space-around;
-    padding: 33px 0;
+    padding: 30px 0;
   }
 
   header .content-wrapper {
     width: 100%;
-    justify-content: flex-start;
-    padding-left: 100px;
+    justify-content: space-between;
 
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -538,20 +551,24 @@ aside {
   }
 
   header nav ul {
-    justify-content: space-around;
+    justify-content: space-between;
   }
-  /*.header-divider {
+
+  .header-divider {
     display: none;
 
-  }*/
+  }
 
   /*Hero area*/
 
+  .hero-area {
+    min-height: 600px;
+  }
   /* Aside */
   aside .content-wrapper {
     margin: 50px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row;
   }
   aside .content-wrapper .form-description,
@@ -562,6 +579,10 @@ aside {
 
 /*Features */
 
+  .features h2 {
+    padding-bottom: 20px;
+  }
+
   .features-item article {
     display: flex;
     justify-content: center;
@@ -571,30 +592,75 @@ aside {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 60%;
   }
 
 /* Reviews */
 
-  .review-content {
-    display: flex;
-    flex-basis: 50%;
-    flex-flow: column;
-}
-
   .reviews article {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
+  .reviews h2 {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
   /* Footer */
 
-  .footer-content {
+  footer .content-wrapper {
+    width: 80%;
+    margin: 100px 0;
+
+  }
+
+  footer .footer-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 502px;
+    align-items: center;
+    width: 65%;
   }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* About */
+
+  .mission-content article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .map figure {
+    padding-bottom: 45.5%;
+  }
+
+
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
@@ -618,11 +684,14 @@ aside {
   .features-item article {
     flex-basis: 33%;
   }
-
+/*
   .footer-content {
     width: 860px;
   }
-
+*/
+  footer .footer-content {
+    width: 860px;
+  }
   /* About page */
 
 
