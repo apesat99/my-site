@@ -180,7 +180,6 @@ header figure {
     flex-flow: row wrap;
 }
 
-}
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -191,8 +190,8 @@ header .content-wrapper {
 
 header {
 
-  padding: 15px 0;
-  width: 100%;
+  padding: 10px;
+  width: 95%;
 }
 
 .header-divider {
@@ -218,6 +217,9 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  margin: 0;
 }
 
 header nav ul li {
@@ -377,6 +379,12 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   background-color: #2a423a;
+  padding-bottom: 50px;
+}
+
+.contact-section div {
+  margin: 10px 0 10px 0;
+
 }
 .contact-content {
   margin: 0;
@@ -411,7 +419,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
+  width: 100%;
 }
 
 .faq .content-wrapper {
@@ -534,6 +542,7 @@ aside {
     flex-flow: row;
     justify-content: space-around;
     padding: 30px 0;
+    width: 100%;
   }
 
   header .content-wrapper {
@@ -629,7 +638,7 @@ aside {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 65%;
+    width: 85%;
   }
 
   footer .contact {
